@@ -1,7 +1,7 @@
 """
 Module FileProcessor
 
-Provides  extensions to documentation tools as Documenter.jl and Literate.jl, including a basic file processor for pre- or post-processing of files.
+Enableds convinient text file processing.
 """
 module FileProcessor
 
@@ -13,5 +13,5 @@ using .Exceptions
 include("map.jl")
 
 ## Exports (need to be after include of submodules if re-exports from them)
-export FileProcessor
+
 end
