@@ -1,0 +1,13 @@
+name = "DocExtensions"
+uuid = "cbdad009-89f1-4e05-85a0-06b07b50707d"
+authors = ["Samuel Omlin"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
