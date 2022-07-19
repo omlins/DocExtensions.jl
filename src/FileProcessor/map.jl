@@ -1,5 +1,5 @@
 """
-    map(f::Function, filepattern::AbstractString, args...; outfilepattern::AbstractString=filepattern, rootdir::AbstractString=".")
+    map(f, filepattern, args...; outfilepattern=filepattern, rootdir=".")
 
 Transform the file or collection of files in directory `rootdir` defined by `filepattern` by applying `f` to content of each file (calling `f(content, args...)`), writing the result back to the file(s) specified with `outfilepattern`; for both `filepattern` and `outfilepattern` currently supported is a file name extension (e.g. filepattern = `".MD"` and outfilepattern = `".md"`) or simply an explicit file name.
 
