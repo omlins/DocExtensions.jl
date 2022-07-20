@@ -40,9 +40,10 @@ jobs:
       - uses: codecov/codecov-action@v2
         with:
           files: lcov.info
-      # - uses: julia-actions/julia-uploadcoveralls@v1
-      #   env:
-      #     COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
+      - uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./lcov.info
   docs:
     name: Documentation
     runs-on: ubuntu-latest
