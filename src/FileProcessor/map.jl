@@ -5,11 +5,11 @@ Transform the file or collection of files in directory `rootdir` defined by `fil
 
 ## Arguments
 - `f::Function`: the function to be applied to the content of the files.
-- `filepattern::AbstractString=".MD": a file extension or file name defining the files to be processed.
+- `filepattern::AbstractString=".MD"`: a file extension or file name defining the files to be processed.
 - `args...`: arguments to be passed to `f` in addition to the content of each file.
 
 ## Keyword Arguments
-- `outfilepattern::AbstractString=".MD": a file extension or file name defining the name(s) of the output files.
+- `outfilepattern::AbstractString=".MD"`: a file extension or file name defining the name(s) of the output files.
 - `rootdir::AbstractString="."`: the root directory of the files to be processed.
 - `do_write::Bool=true`:: whether to actually write the results into file(s).
 
@@ -42,8 +42,8 @@ function map(f::Function, filepattern::AbstractString, args...; outfilepattern::
             content  = replace(content, args...)
             push!(results, content)
             if (do_write)
-                @info "-> Writing $filepath..."
                 filepath = filepath[1:end-length(filepattern)] * outfilepattern
+                @info "-> Writing $filepath..."
                 write(filepath, content)
             end
         end
