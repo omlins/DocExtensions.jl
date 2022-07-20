@@ -8,7 +8,7 @@ DocMeta.setdocmeta!(DocExtensions, :DocTestSetup, :(using DocExtensions); recurs
 
 @info "Preprocessing .MD-files..."
 include("reflinks.jl")
-expand_reflinks(reflinks; rootdir=DOCSRC)
+MarkdownExtensions.expand_reflinks(reflinks; rootdir=DOCSRC)
 
 
 @info "Building documentation website using Documenter.jl..."
