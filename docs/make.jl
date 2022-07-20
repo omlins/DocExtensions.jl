@@ -2,7 +2,7 @@ using DocExtensions
 using Documenter
 using DocExtensions.DocumenterExtensions
 
-const DOCSRC      = joinpath(@__DIR__, "src")
+const DOCSRC = joinpath(@__DIR__, "src")
 
 DocMeta.setdocmeta!(DocExtensions, :DocTestSetup, :(using DocExtensions); recursive=true)
 
