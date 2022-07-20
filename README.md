@@ -8,4 +8,5 @@
 
 [![Dev](https://omlins.github.io/DocExtensions.jl/dev/)](https://omlins.github.io/DocExtensions.jl/dev)
 
-<iframe src="https://github.com/omlins/DocExtensions.jl/blob/gh-pages/index.html" ></iframe>
+<div w3-include-html="https://github.com/omlins/DocExtensions.jl/blob/gh-pages/index.html"></div> 
+
