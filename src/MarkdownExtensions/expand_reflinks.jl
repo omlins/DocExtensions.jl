@@ -14,7 +14,7 @@ Expand the reference links `reflinks` in the file or collection of files in dire
 function expand_reflinks(reflinks::Dict{<:AbstractString, <:AbstractString}; filepattern::AbstractString=".MD", outfilepattern::AbstractString=lowercase(filepattern), rootdir::AbstractString=".")
     @info "DocExtensions: expanding reference links in file(s) in directory $rootdir matching \"$filepattern\"..."
     directrefs = "(" * join(escape.(keys(reflinks)), "|") * ")(?![(].*[)])"
-    refs       = "([[][^]]+[]])?" * directrefs
+    refs       = "([[][^]]*[]])?" * directrefs
     function replace_ref(x)
         refs = split(x, "]", keepempty=false) .* "]"
         return "$(refs[1])($(reflinks[refs[end]]))"
