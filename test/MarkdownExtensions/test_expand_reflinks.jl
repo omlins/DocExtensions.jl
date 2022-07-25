@@ -10,5 +10,7 @@ using DocExtensions
         @test occursin("[DocExtensions.jl](https://github.com/omlins/DocExtensions.jl)", content)
         @test occursin("[Documenter.jl](https://github.com/JuliaDocs/Documenter.jl)", content)
         @test occursin("[Literate.jl](https://github.com/fredrikekre/Literate.jl)", content)
+        @test occursin("[Julia documenter package](https://github.com/JuliaDocs/Documenter.jl)", content)
+        @test occursin("[Julia literate programming package](https://github.com/fredrikekre/Literate.jl)", content)
     end;
 end;
