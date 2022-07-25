@@ -1,7 +1,7 @@
 """
 Module DocumenterExtensions
 
-Provides specific punctual extensions to Documenter.jl.
+Provides small but well-directed extensions to Documenter.jl.
 """
 module DocumenterExtensions
 

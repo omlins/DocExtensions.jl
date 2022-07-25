@@ -4,6 +4,13 @@ CurrentModule = DocExtensions
 
 # API reference
 
+This is the offical API reference of `DocExtensions`. Note that it can also be queried interactively from the [Julia REPL] using the [help mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Help-mode):
+```julia-repl
+julia> using DocExtensions
+julia>?
+help?> DocExtensions
+```
+
 ## Extensions to Markdown
 ```@docs
 DocExtensions.MarkdownExtensions
@@ -18,7 +25,7 @@ Modules = [DocExtensions.MarkdownExtensions]
 Filter = t -> typeof(t) !== DocExtensions.MarkdownExtensions
 ```
 
-## Specific punctual extensions to [Documenter.jl]
+## Extensions to [Documenter.jl]
 ```@docs
 DocExtensions.DocumenterExtensions
 ```
