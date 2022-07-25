@@ -25,7 +25,7 @@ Modules = [DocExtensions.MarkdownExtensions]
 Filter = t -> typeof(t) !== DocExtensions.MarkdownExtensions
 ```
 
-## Selective extensions to [Documenter.jl]
+## Extensions to [Documenter.jl]
 ```@docs
 DocExtensions.DocumenterExtensions
 ```
